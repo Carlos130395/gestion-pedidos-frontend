@@ -1,0 +1,58 @@
+/* Contenedor para el detalle del producto */
+.producto-detalle {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+p strong {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para el botón */
+a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #45a049;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .producto-detalle {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a.btn {
+    font-size: 0.9rem;
+  }
+}

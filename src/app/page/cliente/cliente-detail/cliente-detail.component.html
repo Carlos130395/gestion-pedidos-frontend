@@ -1,0 +1,11 @@
+<div *ngIf="cliente" class="cliente-detail">
+  <h2>Detalles del Cliente</h2>
+  <p><strong>Nombre:</strong> {{ cliente.nombre }}</p>
+  <p><strong>Email:</strong> {{ cliente.email }}</p>
+
+  <button routerLink="/clientes" class="btn btn-secondary">Volver a la lista</button>
+</div>
+
+<div *ngIf="!cliente">
+  <p>Cargando cliente...</p>
+</div>

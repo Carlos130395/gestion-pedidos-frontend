@@ -1,0 +1,90 @@
+/* Estilos para el contenedor principal */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4a90e2; /* Color primario */
+}
+
+/* Estilos para el botón "Agregar Producto" */
+a.btn-agregar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.btn-agregar:hover {
+  background-color: #45a049; /* Color hover */
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color alterno para filas */
+}
+
+/* Estilos para los botones en las filas */
+button.btn-info, button.btn-danger {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-info {
+  background-color: #2196F3; /* Color azul para Ver Detalles */
+}
+
+button.btn-info:hover {
+  background-color: #0b7dda; /* Color hover */
+}
+
+button.btn-danger {
+  background-color: #f44336; /* Color rojo para Eliminar */
+}
+
+button.btn-danger:hover {
+  background-color: #d32f2f; /* Color hover */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  a.btn-agregar {
+    padding: 8px 16px;
+  }
+}

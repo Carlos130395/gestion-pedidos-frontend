@@ -1,0 +1,13 @@
+<h2>Nuevo Pedido</h2>
+<form (ngSubmit)="guardarPedido()">
+  <label for="clienteId">Cliente ID:</label>
+  <input [(ngModel)]="pedido.clienteId" name="clienteId" required>
+
+  <label for="productosIds">Productos IDs (separados por comas):</label>
+  <input [(ngModel)]="pedido.productosIds" name="productosIds" required>
+
+  <label for="total">Total:</label>
+  <input type="number" [(ngModel)]="pedido.total" name="total" required>
+
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
